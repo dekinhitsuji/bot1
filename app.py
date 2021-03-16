@@ -1,4 +1,3 @@
-import tweepy
 import configparser
 import json
 from requests_oauthlib import OAuth1Session
