@@ -4,6 +4,7 @@ from requests_oauthlib import OAuth1Session
 import pandas as pd
 import random
 import time
+import datetime
 
 conf = configparser.ConfigParser()
 conf.read('config.ini')
@@ -42,6 +43,7 @@ def main():
         #Twitterにツイートを送信
         params = {'status':tweet}
         response = twitter.post(url, params=params)
+        
 
         #成功したか否か
         print(response.status_code)
